@@ -1,0 +1,137 @@
+.products {
+  display: flex;
+  margin-top: 4%;
+}
+.filter {
+  position: sticky;
+  top: 0;
+  height: 40rem;
+  min-width: 12rem;
+  padding-left: 2%;
+
+  background-image: linear-gradient(
+    to bottom,
+    rgb(185, 250, 124),
+    rgba(251, 204, 111, 0.5),
+    rgba(255, 255, 255, 0.5)
+  );
+}
+.filter input,
+label {
+  cursor: pointer;
+}
+.filter .search {
+  width: 10rem;
+  font-size: 1.2rem;
+  padding: 1%;
+  border-radius: 5px;
+}
+.productsarea {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-left: 2%;
+  margin-bottom: 2rem;
+  flex: 1 0 0;
+  /* max-width: 60rem; */
+  /* background-color: rgb(75, 104, 75); */
+}
+.productcard {
+  border: 1px solid rgb(216, 228, 185);
+  padding: 4% 2%;
+  width: 13rem;
+  height: fit-content;
+}
+.productcard div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.4rem;
+  height: 8rem;
+}
+.productcard p {
+  margin: 0;
+}
+.productcard span {
+  font-weight: 500;
+  color: rgb(66, 50, 33);
+}
+.productcard button {
+  font-size: 1.2rem;
+  padding: 2% 5%;
+  border: 1.5px solid rgb(128, 165, 42);
+  background-color: none;
+  border-radius: 4px;
+  width: 100%;
+  cursor: pointer;
+}
+.productcard button:hover {
+  background-color: rgb(117, 146, 70);
+  color: whitesmoke;
+}
+.productcard img {
+  height: 12rem;
+  width: 12rem;
+  background-image: rgb(58, 75, 87);
+}
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+.modal .content {
+  height: fit-content;
+  width: fit-content;
+  position: absolute;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 7%;
+  gap: 2rem;
+}
+.modal .content img {
+  height: 15rem;
+  width: 15rem;
+}
+.modal .content .textcontent {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* gap: 1rem; */
+}
+.modal .content .textcontent button {
+  font-size: 1.2rem;
+  margin-bottom: 10%;
+  cursor: pointer;
+  padding: 4% 18%;
+  width: 12rem;
+  background-color: whitesmoke;
+  border: 1.5px solid rgb(128, 165, 42);
+  text-transform: capitalize;
+  border-radius: 5px;
+}
+.modal .content .textcontent button:hover {
+  background-color: rgb(117, 146, 70);
+  color: whitesmoke;
+}
+.modal .content .closemodal {
+  cursor: pointer;
+  font-size: 4rem;
+  position: absolute;
+  right: 2rem;
+  top: 0;
+  color: red;
+}
+.modal .content .closemodal:hover {
+  font-size: 5rem;
+}
+@media (max-width: 760px) {
+  .modal .content {
+    padding: 11% 5%;
+  }
+}

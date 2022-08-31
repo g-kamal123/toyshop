@@ -1,0 +1,54 @@
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    /* width: 100vw; */
+    /* justify-content: space-between; */
+}
+.navigation ul a{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex: 1 0 0;
+    color: whitesmoke;
+    font-size: 1.4rem;
+    padding: 1%;
+    cursor: pointer;
+    text-decoration: none;
+    /* color: rgb(7, 75, 7); */
+}
+.log{
+    display: flex;
+    justify-content: space-between;
+}
+.log span{
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 2%;
+    word-wrap: normal;
+    color: rgb(24, 23, 23);
+    cursor: pointer;
+    background-color: rgb(177, 167, 167);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    border-radius: 5px;
+}
+.forms form button:hover{
+    background-color: orange;
+    border: none;
+    border-radius: 2px;
+    /* color: whitesmoke; */
+}
+.logout button:hover{
+    background-color: orange;
+    border: none;
+    border-radius: 2px;
+}
+@media (max-width:760px){
+    .forms{
+        max-width: 15rem;
+    }
+}
